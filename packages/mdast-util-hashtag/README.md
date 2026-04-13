@@ -1,7 +1,6 @@
 # mdast-util-hashtag
 
-[mdast][] extensions to parse [Obsidian]-style inline footnotes
-and convert them to [GFM footnotes][gfm-footnote].
+[mdast][] extensions to parse [Obsidian]-hashtags as literal nodes.
 Intended to be used with [micromark-extension-hashtag][].
 
 ## Install
