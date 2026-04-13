@@ -1,6 +1,6 @@
 # mdast-util-hashtag
 
-[mdast][] extensions to parse [Obsidian]-hashtags as literal nodes.
+[mdast][] extensions to parse hashtags as literal nodes.
 Intended to be used with [micromark-extension-hashtag][].
 
 ## Install
@@ -15,28 +15,28 @@ npm install micromark-extension-hashtag mdast-util-hashtag
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import { blockIdFromMarkdown } from "https://esm.sh/mdast-util-hashtag@1";
+import { hashtagFromMarkdown } from "https://esm.sh/mdast-util-hashtag@1";
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-	import { blockIdFromMarkdown } from "https://esm.sh/mdast-util-hashtag12?bundle";
+	import { hashtagFromMarkdown } from "https://esm.sh/mdast-util-hashtag@1?bundle";
 </script>
 ```
 
 ## API
 
-This package exports the identifiers
-[`blockIdFromMarkdown`][api-frommarkdown].
+This package exports the identifier
+[`hashtagFromMarkdown`][api-frommarkdown].
 There is no default export.
 
-### `blockIdFromMarkdown()`
+### `hashtagFromMarkdown()`
 
 Create an extension for
 [`mdast-util-from-markdown`][mdast-util-from-markdown]
-to enable block ids in markdown.
+to enable hashtags in markdown.
 
 ###### Returns
 
@@ -53,7 +53,7 @@ Extension for `mdast-util-from-markdown`
 [mdast]: https://github.com/syntax-tree/mdast
 [gfm-footnote]: https://github.com/syntax-tree/mdast-util-gfm-footnote
 [npm]: https://docs.npmjs.com/cli/install
-[api-frommarkdown]: #blockidfrommarkdown
+[api-frommarkdown]: #hashtagfrommarkdown
 [frommarkdownextension]: https://github.com/syntax-tree/mdast-util-from-markdown#extension
 [api-togfm]: #inlinefootnotetogfm
 [micromark-extension-hashtag]: https://github.com/jajaperson/unified-hashtag/tree/main/packages/micromark-extension-hashtag
