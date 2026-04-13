@@ -1,0 +1,32 @@
+{
+	"author": "James Jensen <jamesarthurjensen@gmail.com> (https://jajaperson.me)",
+	"name": "micromark-extension-hashtag",
+	"repository": "https://github.com/jajaperson/unified-hashtag/tree/main/packages/micromark-extension-hashtag",
+	"type": "module",
+	"main": "index.js",
+	"version": "1.0.0",
+	"keywords": [
+		"remark",
+		"markdown",
+		"hashtag",
+		"obsidian",
+		"micromark"
+	],
+	"license": "MIT",
+	"packageManager": "pnpm@10.20.0",
+	"bugs": "https://github.com/jajaperson/unified-hashtag/issues",
+	"contributors": [
+		"James Jensen <jamesarthurjensen@gmail.com> (https://jajaperson.me)"
+	],
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"lib"
+	],
+	"dependencies": {
+		"devlop": "^1.1.0",
+		"micromark-util-symbol": "^2.0.1",
+		"micromark-util-types": "^2.0.2",
+		"micromark-util-character": "^2.1.1"
+	}
+}

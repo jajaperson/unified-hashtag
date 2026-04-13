@@ -1,0 +1,116 @@
+{
+	"type": "root",
+	"children": [
+		{
+			"type": "heading",
+			"depth": 1,
+			"children": [
+				{
+					"type": "text",
+					"value": "Document",
+					"position": {
+						"start": {
+							"line": 1,
+							"column": 3,
+							"offset": 2
+						},
+						"end": {
+							"line": 1,
+							"column": 11,
+							"offset": 10
+						}
+					}
+				}
+			],
+			"position": {
+				"start": {
+					"line": 1,
+					"column": 1,
+					"offset": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 11,
+					"offset": 10
+				}
+			}
+		},
+		{
+			"type": "paragraph",
+			"children": [
+				{
+					"type": "text",
+					"value": "You can customize allowed codes in hashtags, for example to emulate obsidan ",
+					"position": {
+						"start": {
+							"line": 3,
+							"column": 1,
+							"offset": 12
+						},
+						"end": {
+							"line": 3,
+							"column": 77,
+							"offset": 88
+						}
+					}
+				},
+				{
+					"type": "hashtag",
+					"value": "hash_tag/p-k-m",
+					"position": {
+						"start": {
+							"line": 3,
+							"column": 77,
+							"offset": 88
+						},
+						"end": {
+							"line": 3,
+							"column": 92,
+							"offset": 103
+						}
+					}
+				},
+				{
+					"type": "text",
+					"value": ".",
+					"position": {
+						"start": {
+							"line": 3,
+							"column": 92,
+							"offset": 103
+						},
+						"end": {
+							"line": 3,
+							"column": 93,
+							"offset": 104
+						}
+					}
+				}
+			],
+			"position": {
+				"start": {
+					"line": 3,
+					"column": 1,
+					"offset": 12
+				},
+				"end": {
+					"line": 3,
+					"column": 93,
+					"offset": 104
+				}
+			}
+		}
+	],
+	"position": {
+		"start": {
+			"line": 1,
+			"column": 1,
+			"offset": 0
+		},
+		"end": {
+			"line": 4,
+			"column": 1,
+			"offset": 105
+		}
+	}
+}

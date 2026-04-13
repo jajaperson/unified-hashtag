@@ -1,0 +1,40 @@
+{
+	"author": "James Jensen <jamesarthurjensen@gmail.com> (https://jajaperson.me)",
+	"name": "mdast-util-hashtag",
+	"repository": "https://github.com/jajaperson/unified-hashtag/tree/main/packages/mdast-util-hashtag",
+	"type": "module",
+	"main": "index.js",
+	"version": "1.0.0",
+	"scripts": {
+		"test": "node --conditions development test/index.js",
+		"write-fixtures": "node --conditions development test/write-fixtures.js"
+	},
+	"keywords": [
+		"remark",
+		"markdown",
+		"obsidian",
+		"hashtag",
+		"ast",
+		"mdast"
+	],
+	"license": "MIT",
+	"packageManager": "pnpm@10.20.0",
+	"bugs": "https://github.com/jajaperson/unified-hashtag/issues",
+	"contributors": [
+		"James Jensen <jamesarthurjensen@gmail.com> (https://jajaperson.me)"
+	],
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"lib"
+	],
+	"dependencies": {
+		"@types/mdast": "^4.0.4",
+		"devlop": "^1.1.0"
+	},
+	"devDependencies": {
+		"micromark-extension-hashtag": "workspace:*",
+		"mdast-util-from-markdown": "^2.0.3",
+		"micromark-util-symbol": "^2.0.1"
+	}
+}
