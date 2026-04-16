@@ -4,7 +4,7 @@
 	"repository": "https://github.com/jajaperson/unified-hashtag/tree/main/packages/micromark-extension-hashtag",
 	"type": "module",
 	"main": "index.js",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"keywords": [
 		"remark",
 		"markdown",

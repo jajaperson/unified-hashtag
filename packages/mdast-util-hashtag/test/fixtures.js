@@ -43,4 +43,16 @@ export const fixtures = [
 			return JSON.stringify(ast, null, "\t");
 		},
 	},
+	{
+		description: "Should leave lone hashes alone",
+		input: "loneHash.md",
+		output: "loneHash.json",
+		process(md) {
+			const ast = fromMarkdown(md, {
+				extensions: [hashtag()],
+				mdastExtensions: [hashtagFromMarkdown()],
+			});
+			return JSON.stringify(ast, null, "\t");
+		},
+	},
 ];

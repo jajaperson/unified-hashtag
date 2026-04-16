@@ -4,7 +4,7 @@
 
 import { ok as assert } from "devlop";
 import { codes } from "micromark-util-symbol";
-import { asciiAlphanumeric } from "micromark-util-character";
+import { asciiAlphanumeric, markdownLineEnding } from "micromark-util-character";
 
 /**
  * @callback Predicate
@@ -77,7 +77,7 @@ export function hashtag(allowedPredicate) {
 		 * @type {State}
 		 */
 		function content(code) {
-			if (allowed(code)) {
+			if (allowed(code) && !(markdownLineEnding(code) || code === null)) {
 				effects.consume(code);
 				empty = false;
 				return content;
@@ -87,6 +87,7 @@ export function hashtag(allowedPredicate) {
 				effects.exit("hashtag");
 				return ok(code);
 			}
+			return nok(code);
 		}
 	}
 }
