@@ -36,6 +36,9 @@ importers:
       micromark-extension-hashtag:
         specifier: workspace:*
         version: link:../micromark-extension-hashtag
+      micromark-util-character:
+        specifier: ^2.1.1
+        version: 2.1.1
       micromark-util-symbol:
         specifier: ^2.0.1
         version: 2.0.1

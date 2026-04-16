@@ -4,22 +4,26 @@
 
 import { ok as assert } from "devlop";
 import { codes } from "micromark-util-symbol";
-import {
-	asciiAlphanumeric,
-	markdownLineEnding,
-	markdownLineEndingOrSpace,
-} from "micromark-util-character";
+import { asciiAlphanumeric } from "micromark-util-character";
+
+/**
+ * @callback Predicate
+ * @param {Code} code
+ * @returns {boolean}
+ */
 
 /**
  * Creates an extension for `micromark` to enable hashtag syntax
  *
- * @param {Code[]} allowed - Non-alphanumeric codes to allow in a hashtag.
- *
+ * @param {Predicate} [allowedPredicate=asciiAlphanumeric]
+ *   Codes allowed in a hashtag string. Defaults to ascii alphanumeric codes.
  * @returns {Extension}
- *   Extension for the `micromark` package that can be passed in `extensions` to enable
- *   hashtag syntax.
+ *   Extension for the `micromark` package that can be passed in `extensions`
+ *   to enable hashtag syntax.
  */
-export function hashtag(...allowed) {
+export function hashtag(allowedPredicate) {
+	const allowed = allowedPredicate ?? asciiAlphanumeric;
+
 	/** @type {Construct} */
 	const construct = {
 		name: "hashtag",
@@ -73,7 +77,7 @@ export function hashtag(...allowed) {
 		 * @type {State}
 		 */
 		function content(code) {
-			if (asciiAlphanumeric(code) || allowed.includes(code)) {
+			if (allowed(code)) {
 				effects.consume(code);
 				empty = false;
 				return content;
